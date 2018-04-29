@@ -1,0 +1,7 @@
+def feladat(szo):
+    uj_szo = szo[1].upper()+szo[2:]+szo[0].lower()+"ay"
+    return uj_szo
+
+#main:
+szo = input("adj meg egy szó: ")
+print(feladat(szo))
