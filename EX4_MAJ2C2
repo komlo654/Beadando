@@ -1,7 +1,7 @@
-def feladat(szo):
-    uj_szo = szo[1].upper()+szo[2:]+szo[0].lower()+"ay"
-    return uj_szo
-
-#main:
-szo = input("adj meg egy szó: ")
-print(feladat(szo))
+def feladat4(szo):
+    uj_szo = ""
+    for i in szo.split(" "):
+        uj_szo+= i[1].upper()+i[2:]+i[0].lower()+"ay"
+        return uj_szo
+szo = input("adj meg egy szót: ")
+print(feladat4(szo))
