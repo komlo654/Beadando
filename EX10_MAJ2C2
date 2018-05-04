@@ -3,6 +3,20 @@ def feladat10():
     szam = 999999999
     for i in range(1,szam):
         if i%oszto==0:
-            return "az első prím szám ami oszthato 1-től 20ig az összes számmal maradék nélkül, az a:" ,i," szam"
+            return i
     return -1
 print(feladat10())
+
+#sokkal nagyobb futási idő
+def feladat10(n,x):
+    for i in range(20,n):
+        db=0
+        for j in range(1,x+1):
+            if i%j==0:
+                db+=1
+        if db == x:
+            return i
+    return None
+n = 300000000
+x=int(input("meddig nézzük az oszthatóságot?"))
+print(feladat10(n,x))
