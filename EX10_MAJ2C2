@@ -9,7 +9,7 @@ print(feladat10())
 
 #sokkal nagyobb futási idő
 def feladat10(n,x):
-    for i in range(20,n):
+    for i in range(1,n):
         db=0
         for j in range(1,x+1):
             if i%j==0:
