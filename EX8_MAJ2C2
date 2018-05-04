@@ -1,0 +1,19 @@
+def feladat8(str1,str2):
+    k =" "
+    if str1 == str2:
+        return str1
+    else:
+        for i in range(len(str1)):
+            a = str1[i]
+            for j in range(len(str2)):
+                b = str2[j]
+                if a==b:
+                    k+=b
+        return k
+
+
+
+#main:
+str1=input("adjon meg egy szót:")
+str2=input("adjon meg egy másik szót: ")
+print(feladat8(str1,str2))
