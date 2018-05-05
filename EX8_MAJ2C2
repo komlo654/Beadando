@@ -7,7 +7,7 @@ def feladat8(str1,str2):
             a = str1[i]
             for j in range(len(str2)):
                 b = str2[j]
-                if a==b:
+                if a==b and b not in k:
                     k+=b
         return k
 
