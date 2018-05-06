@@ -12,7 +12,6 @@ def feladat8(str1,str2):
         return k
 
 
-
 #main:
 str1=input("adjon meg egy szót:")
 str2=input("adjon meg egy másik szót: ")
