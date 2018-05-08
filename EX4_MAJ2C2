@@ -6,3 +6,21 @@ def feladat4(szo):
 
 szo = "The quick brown fox"
 print(feladat4(szo))
+
+#masodik megoldás:
+def feladat4(szo,fordito):
+    if fordito == "toPiglatin":
+        uj_szo1=""
+        for i in szo.split(" "):
+            uj_szo1 += i[1:] + i[0].lower() + "ay" + " "
+        return uj_szo1[0].upper() + uj_szo1[1:-1]
+    elif fordito == "fromPiglatin":
+        uj_szo2=""
+        for k in szo.split(" "):
+            uj_szo2+=k[-3]+k[:-3]+" "
+        return uj_szo2[0].upper()+uj_szo2[1:-1].lower()
+
+#MAIN:
+fordito = input("toPiglatin or fromPiglatin")
+szo=input("irja be a szöveget: ")
+print(feladat4(szo,fordito))
