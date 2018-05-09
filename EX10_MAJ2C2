@@ -8,15 +8,14 @@ def feladat10():
 print(feladat10())
 
 #sokkal nagyobb futási idő
-def feladat10(n,x):
-    for i in range(1,n):
+def feladat10():
+    szam=999999999
+    for i in range(2520,szam+1,2520):
         db=0
-        for j in range(1,x+1):
+        for j in range(1,21):
             if i%j==0:
                 db+=1
-        if db == x:
+        if db == 20:
             return i
     return None
-n = 300000000
-x=int(input("meddig nézzük az oszthatóságot?"))
-print(feladat10(n,x))
+print(feladat10())
